@@ -1,38 +1,50 @@
 body {
-  height: 100%;
-  font-family: serif;
+  margin: 100px;
+  width: 400px;
+  height: 500px;
+  color: #311b92;
+}
+section {
+  background-color: #fff1ff;
+  min-height: 400px;
+  line-height: 400px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: #e1bee7;
+  height: 70px;
+  line-height: 70px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin: 0px;
 }
 h1 {
-  font-family: fantasy;
+  vertical-align: middle;
 }
-div {
-  position: absolute;
-  /* display: flex; */
-  /* justify-content: center; */
+footer {
+  height: 50px;
+  background-color: #ac8fb6;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   text-align: center;
-  left: 35%;
-  margin-top: 50px;
-  background: sandybrown;
-  width: 500px;
-  height: 600px;
-  border-radius: 5em;
+  line-height: 50px;
+}
+#shoppingCart {
+  cursor: pointer;
+  vertical-align: middle;
+}
+#shoppingCart:hover {
+  width: 35px;
+  height: 35px;
 }
 
 #text {
-  position: absolute;
-  bottom: 50px;
-  left: 75px; /*전체div너비-text칸너비/ 2*/
-  width: 350px;
   height: 40px;
-
-  /* text-align: left; */
-  border-radius: 10px;
-  border: 0px;
-}
-#shoppingCart {
-  position: absolute;
-  bottom: 10px;
-  cursor: pointer;
+  width: 385px;
+  vertical-align: bottom;
+  border: thick dashed #ac8fb6;
 }
 ul {
   position: absolute;
@@ -41,16 +53,8 @@ ul {
 }
 li {
   text-align: left;
-  line-height: 35px;
+  line-height: 40px;
   width: 400px;
-
-  /* border: 1px palegreen;
-  border-bottom: palevioletred; */
-  /* padding-right: 100px; */
-
-  /* vertical-align: middle; */
-  /* width: 200px;
-  padding: 50px 10px 50px 10px; */
 }
 .trash {
   cursor: pointer;
