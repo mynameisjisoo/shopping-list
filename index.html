@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoppingList</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
-</head>
+    <title>Shopping List </title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/38a58694bf.js" crossorigin="anonymous"></script>
 
+</head>
 <body>
-    <header><h1> Shopping List</h1></header>
-    <section>
-        <ul></ul>
-        <input id="text" type="text"></input>
-    </section>
+    <section class="list">
+        <header>Shopping List</header>
+        <ul class="items"></ul>
         <footer>
-            <img id="shoppingCart" src="./img/shopping-cart.png" alt="shopping-cart">
+            <input class="footer_input" type="text">
+            <button class="footer_button">
+                <i class="fas fa-plus"></i>
+            </button>
         </footer>
-    
+    </section>
 </body>
 </html>
