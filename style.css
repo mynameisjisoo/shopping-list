@@ -53,7 +53,6 @@ footer {
   width: 48px;
   font-size: 30px;
   color: bisque;
-  background: transparent;
   border-color: bisque;
   border-style: solid;
   border-radius: 50%;
@@ -62,7 +61,7 @@ footer {
 .items {
   height: 400px;
   padding: 0px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .item {
   display: flex;
@@ -79,6 +78,9 @@ footer {
 .list:hover {
   box-shadow: 5px 5px 15px 7px #c8aeff;
 }
+button {
+  background: transparent;
+}
 .footer_button {
   transition: all 300ms ease-in;
 }
@@ -87,6 +89,7 @@ footer {
 }
 
 .item_delete {
+  border: none;
   transition: all 300ms ease-in;
 }
 
