@@ -1,20 +1,29 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background: lavender;
 }
+
 .list {
   background: azure;
   width: 400px;
   margin: auto;
   border-radius: 25px;
 }
+
+.list:hover {
+  box-shadow: 5px 5px 15px 7px #c8aeff;
+}
+
 header {
   height: 48px;
   border-radius: 25px 25px 0 0;
-  color: white;
+  color: bisque;
   font-size: 30px;
+
+  font-weight: bold;
   text-align: center;
   background: rgb(240, 182, 186);
   background: linear-gradient(
@@ -38,7 +47,7 @@ footer {
   );
   border-radius: 0 0 25px 25px;
 }
-.footer_input {
+.footer__input {
   display: block;
   font-size: 15px;
   width: 400px;
@@ -46,9 +55,33 @@ footer {
   outline: none;
   border: none;
   padding: 0 10px;
+  background-color: azure;
 }
 
-.footer_button {
+.items {
+  height: 400px;
+  padding: 0px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.item__divider {
+  height: 1px;
+  width: 95%;
+  background-color: steelblue;
+  margin: auto;
+}
+
+button {
+  background: transparent;
+}
+
+.footer__button {
   height: 48px;
   width: 48px;
   font-size: 30px;
@@ -57,44 +90,27 @@ footer {
   border-style: solid;
   border-radius: 50%;
   cursor: pointer;
-}
-.items {
-  height: 400px;
-  padding: 0px;
-  overflow-y: auto;
-}
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 16px;
-}
-.divider {
-  height: 1px;
-  width: 95%;
-  background-color: steelblue;
-  margin: auto;
-}
-
-.list:hover {
-  box-shadow: 5px 5px 15px 7px #c8aeff;
-}
-button {
-  background: transparent;
-}
-.footer_button {
   transition: all 300ms ease-in;
 }
-.footer_button :hover {
+
+.footer__button :hover {
   transform: scale(1.1);
 }
 
-.item_delete {
+.item__delete {
   border: none;
   transition: all 300ms ease-in;
 }
 
-.item_delete:hover {
+.item__delete:hover {
   transform: rotateY(180deg);
   color: red;
   cursor: pointer;
+}
+
+.footer__deleteAll {
+  border-radius: 20px;
+  color: bisque;
+  border: solid bisque;
+  margin-bottom: 3px;
 }
