@@ -1,7 +1,13 @@
 'use strict';
 const items = document.querySelector('.items');
+const form = document.querySelector('.new-form');
 const btn = document.querySelector('.footer__button');
 const input = document.querySelector('.footer__input');
+
+form.addEventListener('submit', event => {
+  event.preventDefault(); //submit이벤트 발생시 브라우저가 페이지 자동으로 다시 로딩하는 것 방지
+  onAdd();
+});
 
 function onAdd() {
   const text = input.value;
@@ -36,17 +42,6 @@ function createItem(text) {
   id++;
   return itemRow;
 }
-
-input.addEventListener('keydown', event => {
-  if (event.key.isComposing) return; //한글입력시 끝에 잘리는 버그 개선 (글자 만들어지고 있으면 그냥 나감)
-  if (event.key === 'Enter') {
-    onAdd();
-  }
-});
-
-btn.addEventListener('click', () => {
-  onAdd();
-});
 
 items.addEventListener('click', event => {
   const delete_id = event.target.dataset.targetid;

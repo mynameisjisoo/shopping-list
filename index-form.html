@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List </title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/38a58694bf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="list">
+        <header>Shopping List</header>
+        <ul class="items"></ul>
+        <footer>
+            <form class="new-form">             
+                <button class="footer__deleteAll">Delete All</button>
+                <input class="footer__input" type="text">
+                <button type="submit" class="footer__button"> 
+                    <!--form안에 있으면 버튼 type은 기본적으로 submit이지만 명시해주는게 좋음-->
+                    <i class="fas fa-plus"></i> 
+                </button>
+            </form>
+        </footer>
+    </section>
+</body>
+</html>
